@@ -3,13 +3,13 @@ title: FHSWF Beamer Class Demonstration
 author: Benjamin Buchwitz
 date: \today
 toc: false
-titlefontsize: 22pt
-fontsize: 10pt
 output: fhswf::presentation
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE, cache=TRUE, dev.args=list(pointsize=11))
+options(digits = 4)
+knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE, cache=TRUE, 
+                      dev.args=list(pointsize=11), size="scriptsize")
 ```
 
 # Intro
@@ -27,6 +27,18 @@ Use `\alert` to \alert{highlight} some text
 1. The first item
 1. Stuff
 1. Nonsense
+
+## Squared Paper
+
+- `\squared{}` (or `\kariert{}`) can be used to produce squared paper
+
+\squared{16}
+
+## Squared Paper
+
+- `\lined{}` (or `\liniert{}`) can be used to produce lined paper
+
+\lined{14}
 
 # Using R
 

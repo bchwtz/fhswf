@@ -1,6 +1,6 @@
 \PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
 \PassOptionsToPackage{hyphens}{url}
-\documentclass[$if(fontsize)$$fontsize$,$else$14pt,$endif$$if(lang)$$babel-lang$,$endif$$if(handout)$handout,$endif$$if(colorlinks)$dvipsnames,$endif$$if(beamer)$ignorenonframetext,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
+\documentclass[$if(fontsize)$$fontsize$,$else$10pt,$endif$$if(lang)$$babel-lang$,$endif$$if(handout)$handout,$endif$$if(colorlinks)$dvipsnames,$endif$$if(beamer)$ignorenonframetext,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
 \IfFileExists{pgfpages.sty}{\usepackage{pgfpages}}{}
 \setbeamertemplate{caption}[numbered]
 \setbeamertemplate{caption label separator}{: }
@@ -353,11 +353,13 @@ $for(include-before)$
 $endfor$
 
 $if(toc)$
-   \frame<beamer>{
+  $if(tocoverview)$
+    \frame<beamer>{
    \frametitle{$if(tocheader)$$tocheader$$else$Outline$endif$}\vspace*{0.2cm}
    $if(tighttoc)$\fontsize{12}{13}\selectfont\parskip=0cm\itemsep=0cm$endif$
    \tableofcontents[hideallsubsections]
   }
+  $endif$
 $endif$
 
 $body$

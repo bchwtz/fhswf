@@ -86,7 +86,7 @@ presentation <- function(toc = FALSE,
                           "resources", "template.tex",
                           package="fhswf")
 
-  rmarkdown::beamer_presentation(template = template,
+  fmt <- rmarkdown::beamer_presentation(template = template,
                                  toc = toc,
                                  slide_level = slide_level,
                                  incremental = incremental,
@@ -106,6 +106,20 @@ presentation <- function(toc = FALSE,
                                  includes = includes,
                                  md_extensions = md_extensions,
                                  pandoc_args = pandoc_args)
+
+
+  # Based on: https://stackoverflow.com/questions/25646333/code-chunk-font-size-in-rmarkdown-with-knitr-and-latex
+
+  fmt$knitr$knit_hooks$size = function(before, options, envir) {
+    if (before) {
+      return(paste0("\n \\", options$size, "\n\n"))
+    }else{
+      #return(paste0("\n \\", knitr::opts_chunk$get()$size, "\n\n"))
+      return("\n\n \\normalsize \n")
+    }
+  }
+
+  return(fmt)
 
 }
 
