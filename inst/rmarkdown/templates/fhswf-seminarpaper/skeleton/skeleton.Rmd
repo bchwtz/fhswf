@@ -13,7 +13,7 @@ author:
   othernames: Marie
   address: "MatNr: 123454678"
   qualifications: "Business Administration (BA, 2. Semester)"
-  email: cuie.marie@fh-swf.de
+  email: curie.marie@fh-swf.de
   correspondingauthor: true
 - familyname: Curie
   othernames: Pierre
