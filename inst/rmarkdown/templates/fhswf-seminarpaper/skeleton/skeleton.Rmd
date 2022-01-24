@@ -78,6 +78,14 @@ Look a wild formula for $s^2$ appeared.
 
 $$s^2 = \sum_{i=1}^n (x_i-\bar{x})^2$$
 
+# Analysis
+
+```{r cars}
+knitr::kable(head(mtcars), booktabs=T, linesep="", caption="Some Cars")
+```
+
+Table \ref{tab:cars} contains some values for cars \dots
+
 # Conclusion
 
 To switch the language to german, change the parameters in the `YAML` Header to the following values.
