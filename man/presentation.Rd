@@ -2,6 +2,7 @@
 % Please edit documentation in R/fhswf.R
 \name{presentation}
 \alias{presentation}
+\alias{seminarpaper}
 \title{Binb is not Beamer - PDF Presentation Themes}
 \usage{
 presentation(
@@ -24,6 +25,8 @@ presentation(
   md_extensions = NULL,
   pandoc_args = NULL
 )
+
+seminarpaper(...)
 }
 \arguments{
 \item{toc}{A logical variable defaulting to \code{FALSE}.}

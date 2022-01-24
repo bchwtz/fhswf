@@ -1,0 +1,91 @@
+---
+title: "Our great idea"
+abstract: "A brief summary of our ideas."
+keywords: "Statistics, Regression, Forecasting"
+
+course: Statistics (Prof. Dr. Buchwitz)
+supervisor: Prof. Dr. Buchwitz
+city: Meschede
+
+# List of Authors
+author:
+- familyname: Curie
+  othernames: Marie
+  address: "MatNr: 123454678"
+  qualifications: "Business Administration (BA, 2. Semester)"
+  email: cuie.marie@fh-swf.de
+  correspondingauthor: true
+- familyname: Curie
+  othernames: Pierre
+  address: "MatNr: 87654321"
+  qualifications: "Electrical Engineering (MA, 1. Semester)"
+  email: curie.pierre@fh-swf.de
+
+# Language Options
+german: false # German Dummy Text
+lang: en-gb   # Text Language: en-gb, en-us, de-de
+
+# Indexes
+toc: true     # Table of Contents
+lot: false    # List of Tables
+lof: false    # List of Figures
+
+# Output Options
+bibliography: references.bib
+biblio-style: authoryear-comp
+blind: false
+cover: true
+output:
+  fhswf::seminarpaper:
+    fig_caption: yes
+    fig_height: 5
+    fig_width: 8
+    keep_tex: no
+    number_sections: yes
+    citation_package: biblatex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, cache=TRUE, messages=FALSE, warning=FALSE)
+# Make sure you have the latest version of rmarkdown and bookdown
+#devtools::install_github("rstudio/rmarkdown")
+#devtools::install_github("rstudio/bookdown")
+library(ggplot2)
+```
+
+
+# Introduction
+
+## Context
+
+## Research Question
+
+## Paper Structure
+
+# Data 
+In a famous paper, @BC64 introduced a family of transformations \dots
+
+```{r histogram, fig.cap="Nice histogram", message=FALSE, warning=FALSE}
+qplot(exp(rnorm(200)))
+```
+
+Consider the logNormal data plotted in Figure \ref{fig:histogram}.
+
+$$s^2 = \sum_{i=1}^n (x_i-\bar{x})^2$$
+
+# Methodology
+
+# Conclusion
+
+
+
+\newpage
+\singlespacing
+
+# Technical Appendix {-}
+
+```{r, echo = TRUE}
+Sys.time()
+sessionInfo()
+```
+

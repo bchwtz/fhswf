@@ -123,6 +123,18 @@ presentation <- function(toc = FALSE,
 
 }
 
+
+#' @rdname presentation
+#' @export
+seminarpaper <- function(...) {
+  template <- system.file("rmarkdown/templates/fhswf-seminarpaper/resources/fhswf-seminarpaper.tex",
+                          package="fhswf")
+  bookdown::pdf_document2(...,
+                          template = template
+  )
+}
+
+
 # Call rmarkdown::pdf_document and mark the return value as inheriting pdf_document
 inherit_pdf_document <- function(...) {
   fmt <- rmarkdown::pdf_document(...)
