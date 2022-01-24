@@ -1,0 +1,7 @@
+usethis::use_package("tinytex")
+usethis::use_package("rmarkdown")
+usethis::use_package("bookdown")
+usethis::use_package("knitr")
+usethis::use_package("ggplot2")
+usethis::use_package("dplyr")
+usethis::use_package("car")

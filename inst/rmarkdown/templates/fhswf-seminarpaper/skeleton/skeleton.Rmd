@@ -43,13 +43,13 @@ output:
     keep_tex: no
     number_sections: yes
     citation_package: biblatex
+knit: fhswf::render_seminarpaper
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, cache=TRUE, messages=FALSE, warning=FALSE)
-# Make sure you have the latest version of rmarkdown and bookdown
-#devtools::install_github("rstudio/rmarkdown")
-#devtools::install_github("rstudio/bookdown")
+knitr::opts_chunk$set(echo = FALSE, cache=FALSE, messages=FALSE, warning=FALSE)
+
+# Load Packages
 library(ggplot2)
 ```
 
@@ -66,7 +66,7 @@ library(ggplot2)
 In a famous paper, @BC64 introduced a family of transformations \dots
 
 ```{r histogram, fig.cap="Nice histogram", message=FALSE, warning=FALSE}
-qplot(exp(rnorm(200)))
+qplot(exp(rnorm(200))) + theme_bw()
 ```
 
 Consider the logNormal data plotted in Figure \ref{fig:histogram}.
