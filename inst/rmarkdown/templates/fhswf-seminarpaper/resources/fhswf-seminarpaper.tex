@@ -10,6 +10,11 @@ $if(linestretch)$
 $endif$
 
 \usepackage{amssymb,amsmath}
+
+\usepackage{enumitem}
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$$\square$$}
+
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
@@ -364,15 +369,65 @@ $endif$
         $else$
           \footnotesize \center This Declaration must be signed by all listed Authors to be valid.
         $endif$
-
-
             }}}
+
 \def\blindtitle{{\sffamily
      \thispagestyle{plain}\raggedright\baselineskip=1.2cm
      {\fontsize{24.88}{30}\sffamily\textbf{\expandafter{\@title}}}\vspace{1cm}\par
         }}
+
+\def\pagetwo{{\sffamily\setstretch{1}%
+  \thispagestyle{empty}%
+  \vbox to \textheight{%
+    $if(german)$
+      {\fontsize{24.88}{30}\sffamily\textbf{\expandafter{Checkliste}}}
+    \vspace{1cm}\par
+
+    Ich erkläre hiermit \dots \\\\
+
+    \begin{todolist}
+      \item List item 1 goes here.
+      \item List item 2 goes here.
+      \begin{todolist}
+        \item Sublist item 1 goes here.
+        \item Sublist item 2 goes here.
+      \end{todolist}
+      \item List item 3 goes here
+      \item List item 4 goes here.
+    \end{todolist}
+
+    $else$
+      {\fontsize{24.88}{30}\sffamily\textbf{\expandafter{Checklist}}}
+    \vspace{1cm}\par
+
+    I hereby declare \dots \\\\
+
+    \begin{todolist}
+        \item List item 1 goes here.
+        \item List item 2 goes here.
+        \begin{todolist}
+          \item Sublist item 1 goes here.
+          \item Sublist item 2 goes here.
+        \end{todolist}
+        \item List item 3 goes here
+        \item List item 4 goes here.
+      \end{todolist}
+
+    $endif$
+    \vfill
+    $if(german)$
+      \footnotesize \center Alle Listeneinträge müssen geprüft werden.
+    $else$
+      \footnotesize \center All list elements must be checked.
+    $endif$
+  }}}
+
 %\def\titlepage{{\cover\newpage\pageone\newpage\blindtitle}}
 \def\titlepage{{\cover\newpage\pageone}}
+
+$if(checklist)$
+\def\titlepage{{\cover\newpage\pageone\newpage\pagetwo}}
+$endif$
 
 \def\blind{\def\titlepage{{\blindtitle}}\let\maketitle\blindtitle}
 \def\titlepageonly{\def\titlepage{{\pageone\end{document}}}}

@@ -35,6 +35,7 @@ bibliography: references.bib
 biblio-style: authoryear-comp
 blind: false
 cover: true
+checklist: true
 output:
   fhswf::seminarpaper:
     fig_caption: yes
@@ -71,12 +72,21 @@ qplot(exp(rnorm(200))) + theme_bw()
 
 Consider the logNormal data plotted in Figure \ref{fig:histogram}.
 
-$$s^2 = \sum_{i=1}^n (x_i-\bar{x})^2$$
-
 # Methodology
+
+Look a wild formula for $s^2$ appeared.
+
+$$s^2 = \sum_{i=1}^n (x_i-\bar{x})^2$$
 
 # Conclusion
 
+To switch the language to german, change the parameters in the `YAML` Header to the following values.
+
+```{r, echo=T, eval=F}
+# Language Options
+german: true
+lang: de-de 
+```
 
 
 \newpage
