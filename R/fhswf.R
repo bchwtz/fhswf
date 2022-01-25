@@ -78,11 +78,11 @@ presentation <- function(toc = FALSE,
   for (f in c("beamerfontthemefhswf.sty",fcolortheme,
               "beamerthemefhswf.sty", "titlepage.pdf", "figs/"))
     if (!file.exists(f))
-      file.copy(system.file("rmarkdown", "templates", "fhswf", "skeleton",
-                            f, package="fhswf"),
+      file.copy(system.file("rmarkdown", "templates", "fhswf-presentation",
+                            "skeleton", f, package="fhswf"),
                 ".", recursive=TRUE)
 
-  template <- system.file("rmarkdown", "templates", "fhswf",
+  template <- system.file("rmarkdown", "templates", "fhswf-presentation",
                           "resources", "template.tex",
                           package="fhswf")
 
