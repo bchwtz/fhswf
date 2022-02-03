@@ -17,4 +17,5 @@ Imports:
     ggplot2,
     knitr,
     rmarkdown,
-    tinytex
+    tinytex,
+    usethis
