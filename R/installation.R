@@ -17,7 +17,7 @@ install_fhswf <- function(){
   tinytex::tlmgr_install("setspace")
   tinytex::tlmgr_install("ifdraft")
 
-  pkg <- c("caption", "xpatch", "csquotes", "verbatimbox")
+  pkg <- c("caption", "xpatch", "csquotes", "verbatimbox", "float")
   x <- sapply(pkg, tinytex::tlmgr_install)
 }
 

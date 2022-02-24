@@ -331,19 +331,24 @@ $endif$
         %%
         \vspace{2cm}
         $if(abstract)$
+        \begin{singlespace}
         \begin{abstract}
+        \footnotesize
         $abstract$
         \end{abstract}
+        \end{singlespace}
         $endif$
         $if(keywords)$
         \begin{keywords}
+        \footnotesize
         $keywords$
         \end{keywords}
         $endif$
         %%
         \vfill
                 \begin{center}
-                $city$\\
+                \footnotesize
+                $city$\linebreak
                 \today
         \end{center}\vspace*{0.5cm}}}
 \def\pageone{{\sffamily\setstretch{1}%
@@ -581,7 +586,7 @@ $endfor$
 $if(date)$
 \date{$date$}
 $else$
-\date{\sf\Date~\Month~\Year}
+\date{\sf\Date.~\Month~\Year}
 $endif$
 \makeatletter
 $if(blind)$
