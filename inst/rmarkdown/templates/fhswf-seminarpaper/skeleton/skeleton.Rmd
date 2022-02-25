@@ -87,6 +87,26 @@ knitr::kable(head(mtcars), booktabs=T, linesep="", caption="Some Cars")
 
 Table \ref{tab:cars} contains some values for cars \dots
 
+This template supports execution of **R** and **Python** code.
+
+## R Code
+
+```{r, echo=T}
+# seed random number generator and generate 3 random numbers
+seed(1)
+rnorm(n=3)
+```
+
+## Python Code
+
+```{python, echo=T}
+from random import seed
+from random import random
+# seed random number generator and generate 3 random numbers
+seed(1)
+print(random(), random(), random())
+```
+
 # Conclusion
 
 To switch the language to german, change the parameters in the `YAML` Header to the following values.
