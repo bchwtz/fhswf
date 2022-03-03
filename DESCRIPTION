@@ -1,7 +1,7 @@
 Package: fhswf
 Type: Package
 Title: fhswf
-Version: 0.0.1
+Version: 0.0.2
 Author: Benjamin Buchwitz
 Maintainer: Benjamin Buchwitz <buchwitz.benjamin@fh-swf.de>
 Description: More about what it does (maybe more than one line)
@@ -14,8 +14,17 @@ Imports:
     bookdown,
     car,
     dplyr,
+    equatiomatic,
+    GGally,
     ggplot2,
+    glmnet,
+    gridExtra,
+    iterators,
     knitr,
+    olsrr,
+    orcutt,
     rmarkdown,
+    stargazer,
+    texreg,
     tinytex,
     usethis
