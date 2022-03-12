@@ -4,6 +4,7 @@ author: Benjamin Buchwitz
 date: \today
 toc: false
 output: fhswf::presentation
+knit: rmarkdown::render
 ---
 
 ```{r setup, include=FALSE}
