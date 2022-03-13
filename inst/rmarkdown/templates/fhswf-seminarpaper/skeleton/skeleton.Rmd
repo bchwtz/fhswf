@@ -93,7 +93,7 @@ This template supports execution of **R** and **Python** code.
 
 ```{r, echo=T}
 # seed random number generator and generate 3 random numbers
-seed(1)
+set.seed(1)
 rnorm(n=3)
 ```
 
