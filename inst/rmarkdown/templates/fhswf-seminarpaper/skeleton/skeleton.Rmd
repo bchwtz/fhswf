@@ -107,6 +107,18 @@ seed(1)
 print(random(), random(), random())
 ```
 
+# Citation
+
+## Using Citations
+
+@Fahrmeir2016
+@Fahrmeir2016[p. 1058]
+[@Fahrmeir2016, p. 1058]
+
+## Managing References
+
+References can be added to the `references.bib` that comes with this template. 
+
 # Conclusion
 
 To switch the language to german, change the parameters in the `YAML` Header to the following values.
