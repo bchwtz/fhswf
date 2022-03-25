@@ -52,6 +52,7 @@ knitr::opts_chunk$set(echo = FALSE, cache=FALSE, messages=FALSE, warning=FALSE,
                       attr.source='.numberLines')
 
 # Load Packages
+library(fhswf)
 library(ggplot2)
 ```
 
