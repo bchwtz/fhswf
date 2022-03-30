@@ -3,7 +3,7 @@
 \name{presentation}
 \alias{presentation}
 \alias{seminarpaper}
-\alias{render_seminarpaper}
+\alias{render_presentation}
 \title{Binb is not Beamer - PDF Presentation Themes}
 \usage{
 presentation(
@@ -29,7 +29,7 @@ presentation(
 
 seminarpaper(...)
 
-render_seminarpaper(...)
+render_presentation(...)
 }
 \arguments{
 \item{toc}{A logical variable defaulting to \code{FALSE}.}

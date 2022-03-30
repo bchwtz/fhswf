@@ -2,5 +2,6 @@
 
 export(install_fhswf)
 export(presentation)
+export(render_presentation)
 export(render_seminarpaper)
 export(seminarpaper)
