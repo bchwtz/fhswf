@@ -14,7 +14,6 @@ A list with data
 stat2022
 }
 \description{
-A dataset containing the prices and other attributes of almost 54,000
-diamonds.
+A dataset containing the data for the statistics course
 }
 \keyword{datasets}

@@ -30,7 +30,11 @@ stat2022$U2$A3 <- data.frame(year            = c(2010,2011,2012,2013,2014,2015),
                              revenue_branch  = c(12.5,13.4,16.2,13.5,16.5,17.1))
 ## Aufgabe 4
 
-stat2022$U2$A4 <- nodata
+T1 <- c(FH=0.64, Akademie=0.23, Uni=0.07, Dual=0.06)
+T2 <- c(BWL=0.48, Ing=0.39, Andere=0.13)
+T3 <- c(BaWue=0.21, NRW=0.26, Bayern=0.2)
+
+stat2022$U2$A4 <- list(T1, T2, T3)
 
 ## Aufgabe 5
 
