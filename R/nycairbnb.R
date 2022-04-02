@@ -1,7 +1,7 @@
 #' New York City Airbnb Offerings
 #'
 #' A dataset containing information including prices and other attributes of
-#' almost 49000 Airbnb accomodation offerings.
+#' almost 49,000 Airbnb accomodation offerings.
 #'
 #' @format A data frame with 48895 rows and 16 variables:
 #' \describe{
