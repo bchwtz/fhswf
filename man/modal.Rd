@@ -2,12 +2,15 @@
 % Please edit documentation in R/modal.R
 \name{modal}
 \alias{modal}
-\title{Modal Value
-The mode, or modal value, is the most frequent value in a set of values.}
+\title{Modal Value}
 \usage{
 modal(x, na.rm = FALSE)
 }
+\arguments{
+\item{x}{vector of numbers , characters, logicals or factors}
+
+\item{na.rm}{logical. If TRUE, NA values are ignored. If FALSE, NA is returned if x has any NA values}
+}
 \description{
-Modal Value
 The mode, or modal value, is the most frequent value in a set of values.
 }
