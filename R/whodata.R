@@ -27,5 +27,6 @@
 #'   \item{birthsupport}{Proportion of births attended by skilled health personnel (percent), (WHO-ID:181206)}
 #'   \item{unemployment_youth}{Youth not in school or employment (percent of ages 15-24), (WHO-ID:147906)}
 #' }
+#' @source \url{https://hdr.undp.org/en/content/human-development-report-office-statistical-data-api}
 #' @source \url{http://ec2-54-174-131-205.compute-1.amazonaws.com/API/Information.php}
 "whodata"

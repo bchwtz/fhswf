@@ -27,6 +27,8 @@ A data frame with 6240 rows and 17 variables:
 }
 }
 \source{
+\url{https://hdr.undp.org/en/content/human-development-report-office-statistical-data-api}
+
 \url{http://ec2-54-174-131-205.compute-1.amazonaws.com/API/Information.php}
 }
 \usage{
