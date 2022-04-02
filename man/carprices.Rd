@@ -5,24 +5,34 @@
 \alias{carprices}
 \title{Car Price Dataset}
 \format{
-A data frame with 48895 rows and 16 variables:
+A data frame with 205 rows and 26 variables:
 \describe{
-  \item{id}{a unique identifier for each offering}
-  \item{name}{name of the listing, displayed headline on the airbnb website}
-  \item{host_id}{a unique identifier for each host}
-  \item{host_name}{name of the host}
-  \item{neighbourhood_group}{name of the borough where the accomodation offering is located}
-  \item{neighhourhood}{name of the neighbourhood where the accomodation offering is located}
-  \item{latitude}{latitude coordinate (north–south position on the Earth's surface) of the offering}
-  \item{longitude}{longitude coordinate (east–west position on the Earth's surface) of the offering}
-  \item{room_type}{room type of the offering, either entire home/appartment, private room or shared room}
-  \item{price}{the price per night in US dollars}
-  \item{minimum_nights}{number of nights to stay that a guest has to book}
-  \item{number_of_reviews}{number of reviews for that specific offering}
-  \item{last_review}{date of the last published review}
-  \item{reviews_per_month}{average number of reviews per month for an offering}
-  \item{host_listings_count}{amount of active listings of the corresponding host}
-  \item{availability_365}{number of days in a year that the listing is available for booking}
+  \item{body}{}
+  \item{brand}{}
+  \item{doors}{}
+  \item{drive_wheels}{}
+  \item{engine_aspiration}{}
+  \item{engine_bore}{}
+  \item{engine_compression}{}
+  \item{engine_cylinders}{}
+  \item{engine_fuelsystem}{}
+  \item{engine_fueltype}{}
+  \item{engine_location}{}
+  \item{engine_size}{}
+  \item{engine_stroke}{}
+  \item{engine_type}{}
+  \item{height}{}
+  \item{hp}{}
+  \item{insurance_normloss}{The relative average loss payment per insured vehicle year. This value is normalized for all autos within a particular size classification (two-door small, station wagons, sports/speciality, etc...), and represents the average loss per car per year.}
+  \item{insurance_symboling}{The degree to which the auto is more risky than its price indicates. Cars are initially assigned a risk factor symbol associated with its price. Then, if it is more risky (or less), this symbol is adjusted by moving it up (or down) the scale. Actuarians call this process "symboling". A value of +3 indicates that the auto is risky, -3 that it is probably pretty safe.}
+  \item{length}{}
+  \item{mpg_city}{}
+  \item{mpg_highway}{}
+  \item{price}{}
+  \item{rpm_max}{}
+  \item{weight}{}
+  \item{wheelbase}{}
+  \item{width}{}
 }
 }
 \source{
@@ -32,7 +42,8 @@ A data frame with 48895 rows and 16 variables:
 carprices
 }
 \description{
-A dataset containing information including prices and other attributes of
-almost 49,000 Airbnb accomodation offerings.
+This data set consists of three types of entities: (a) the specification of
+an auto in terms of various characteristics, (b) its assigned insurance risk
+rating, (c) its normalized losses in use as compared to other cars.
 }
 \keyword{datasets}
