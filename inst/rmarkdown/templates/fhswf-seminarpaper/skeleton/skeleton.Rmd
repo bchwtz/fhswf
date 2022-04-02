@@ -78,7 +78,7 @@ Consider the logNormal data plotted in Figure \ref{fig:histogram}.
 
 Look a wild formula for $s^2$ appeared.
 
-$$s^2 = \sum_{i=1}^n (x_i-\bar{x})^2$$
+$$s^2 = \frac{1}{n-1}\sum_{i=1}^n (x_i-\bar{x})^2$$
 
 # Analysis
 
