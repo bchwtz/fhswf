@@ -89,6 +89,7 @@ plot(ecdf(stat2022$U2$A5),
 
 #install.packages("ineq")
 library(ineq)
+par(pty="s") # Plot quadratisch
 
 lorenzcurve <- ineq::Lc(stat2022$U2$A6$revenue, n=stat2022$U2$A6$count)
 data.frame(kj = lorenzcurve$p, lj = lorenzcurve$L) # Tabelle
