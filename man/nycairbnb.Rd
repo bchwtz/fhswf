@@ -16,7 +16,7 @@ A data frame with 48895 rows and 16 variables:
   \item{latitude}{latitude coordinate (north–south position on the Earth's surface) of the offering}
   \item{longitude}{longitude coordinate (east–west position on the Earth's surface) of the offering}
   \item{room_type}{room type of the offering, either entire home/appartment, private room or shared room}
-  \item{price}{the price per night in US dollars}
+  \item{price}{the price per night, in US dollars}
   \item{minimum_nights}{number of nights to stay that a guest has to book}
   \item{number_of_reviews}{number of reviews for that specific offering}
   \item{last_review}{date of the last published review}
