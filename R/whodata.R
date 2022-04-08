@@ -20,7 +20,7 @@
 #'   \item{hiv}{HIV prevalence, adult (percent of ages 15-49), (WHO-ID:58006)}
 #'   \item{tuberculosis}{Tuberculosis incidence (per 100,000 people), (WHO-ID:182206)}
 #'   \item{dtp}{Infants lacking immunization, DTP (percent of one-year-olds), (WHO-ID:64406)}
-#'   \item{meases}{Infants lacking immunization, measles (percent of one-year-olds), (WHO-ID:64306)}
+#'   \item{measels}{Infants lacking immunization, measles (percent of one-year-olds), (WHO-ID:64306)}
 #'   \item{internet}{Internet users, total (percent of population), (WHO-ID:43606)}
 #'   \item{schooling}{Mean years of schooling (years), (WHO-ID:103006)}
 #'   \item{mortality_under5y}{Mortality rate, under-five (per 1,000 live births), (WHO-ID:57506)}
