@@ -18,7 +18,7 @@ install_fhswf <- function(){
   tinytex::tlmgr_install("ifdraft")
   tinytex::tlmgr_install("microtype")
 
-  pkg <- c("caption", "xpatch", "csquotes", "verbatimbox", "float")
+  pkg <- c("caption", "xpatch", "csquotes", "verbatimbox", "float","enumitem")
   x <- sapply(pkg, tinytex::tlmgr_install)
 }
 
