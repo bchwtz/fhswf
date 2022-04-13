@@ -112,8 +112,18 @@ print(random(), random(), random())
 
 ## Using Citations
 
+This templates comes with some frequently used references.
+
+@StudienbuchStatistik
+
+@FoliensatzStatistik
+
+References can be cited in three different ways.
+
 @Fahrmeir2016
+
 @Fahrmeir2016[p. 1058]
+
 [@Fahrmeir2016, p. 1058]
 
 ## Managing References

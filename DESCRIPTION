@@ -21,6 +21,7 @@ Imports:
     gridExtra,
     iterators,
     knitr,
+    markdown,
     olsrr,
     orcutt,
     reticulate,

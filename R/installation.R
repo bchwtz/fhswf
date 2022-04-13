@@ -37,6 +37,8 @@ install_fhswf <- function(){
   tinytex::tlmgr_install("fpl")
   tinytex::tlmgr_install("mathpazo")
 
+  tinytex::tlmgr_install("biber")
+
   pkg <- c("caption", "xpatch", "csquotes", "verbatimbox", "float","enumitem")
   x <- sapply(pkg, tinytex::tlmgr_install)
 }
@@ -49,7 +51,7 @@ install_fhswf <- function(){
 #' platform Datacamp within the fhswf::seminarpaper document. The example below
 #' shows an rmarkdown chunk for importing a series of pdf certificates.
 #'
-#' @param folder name of the subdirectory in the rmarkdown document folder, the default folder is called "datacampe"
+#' @param dir name of the subdirectory in the rmarkdown document folder, the default folder is called "datacamp"
 #' @export
 #' @examples
 #' # Example rmarkdown code chunk

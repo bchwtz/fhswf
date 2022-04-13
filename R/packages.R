@@ -1,4 +1,5 @@
 usethis::use_package("tinytex")
+usethis::use_package("markdown")
 usethis::use_package("rmarkdown")
 usethis::use_package("bookdown")
 usethis::use_package("knitr")
