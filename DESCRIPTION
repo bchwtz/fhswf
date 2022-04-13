@@ -23,6 +23,7 @@ Imports:
     knitr,
     olsrr,
     orcutt,
+    reticulate,
     rmarkdown,
     stargazer,
     texreg,
