@@ -3,46 +3,23 @@
 install_fhswf <- function(){
   #
   tinytex::tlmgr_update()
-  tinytex::tlmgr_install("elsarticle")
-  tinytex::tlmgr_install("pdfcolmk")
-  tinytex::tlmgr_install("eurosym")
-  tinytex::tlmgr_install("paralist")
-  tinytex::tlmgr_install("sectsty")
-  tinytex::tlmgr_install("subfig")
-  tinytex::tlmgr_install("lineno")
-  tinytex::tlmgr_install("caption")
-  tinytex::tlmgr_install("algorithm2e")
-  tinytex::tlmgr_install("ifoddpage")
-  tinytex::tlmgr_install("relsize")
-  tinytex::tlmgr_install("setspace")
-  tinytex::tlmgr_install("ifdraft")
-  tinytex::tlmgr_install("microtype")
 
-  tinytex::tlmgr_install("fp")
-  tinytex::tlmgr_install("ms")
-  tinytex::tlmgr_install("pgf")
-  tinytex::tlmgr_install("babel-english")
-  tinytex::tlmgr_install("biblatex")
-  tinytex::tlmgr_install("logreq")
-  tinytex::tlmgr_install("grffile")
-  tinytex::tlmgr_install("bera")
-  tinytex::tlmgr_install("fancyhdr")
-  tinytex::tlmgr_install("titlesec")
-  tinytex::tlmgr_install("palatino")
-  tinytex::tlmgr_install("mathtools")
-  tinytex::tlmgr_install("eukdate")
-  tinytex::tlmgr_install("textpos")
-  tinytex::tlmgr_install("grfext")
+  pkgs <- c("caption", "xpatch", "csquotes", "verbatimbox", "float","enumitem",
+            "elsarticle","pdfcolmk","eurosym","paralist","sectsty","subfig",
+            "lineno","caption","algorithm2e","ifoddpage","relsize","setspace",
+            "ifdraft","microtype","fp","ms","pgf","babel-english","biblatex",
+            "logreq","grffile","bera","fancyhdr","titlesec","palatino",
+            "mathtools","eukdate","textpos","grfext","fpl","mathpazo","biber")
 
-  tinytex::tlmgr_install("fpl")
-  tinytex::tlmgr_install("mathpazo")
-
-  tinytex::tlmgr_install("biber")
-
-  pkg <- c("caption", "xpatch", "csquotes", "verbatimbox", "float","enumitem")
-  x <- sapply(pkg, tinytex::tlmgr_install)
+  tinytex::tlmgr_install(pkgs = pkgs)
 }
 
+#' @export
+update_fhswf <- function(){
+  message("Updating the fhswf package...\n")
+  remotes::install_github("bchwtz/fhswf", dependencies = TRUE,
+                          upgrade = TRUE, quiet = TRUE)
+}
 
 #' Include PDFs in RMarkdown Document
 #'
