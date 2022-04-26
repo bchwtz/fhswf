@@ -12,14 +12,19 @@ LazyData: true
 RoxygenNote: 7.1.2
 Imports: 
     bookdown,
+    broom,
     car,
     dplyr,
     equatiomatic,
+    feasts,
+    fGarch,
+    fpp3,
     GGally,
     ggplot2,
     glmnet,
     gridExtra,
     iterators,
+    kableExtra,
     knitr,
     markdown,
     olsrr,
@@ -29,4 +34,5 @@ Imports:
     stargazer,
     texreg,
     tinytex,
-    usethis
+    usethis,
+    USgas

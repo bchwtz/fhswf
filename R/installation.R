@@ -17,11 +17,13 @@ install_fhswf <- function(){
   tinytex::tlmgr_install(pkgs = pkgs)
 }
 
+
 #' @export
 update_fhswf <- function(){
   message("Updating the fhswf package...\n")
   remotes::install_github("bchwtz/fhswf", dependencies = TRUE,
                           upgrade = TRUE, quiet = TRUE)
+
 }
 
 #' Include PDFs in RMarkdown Document
