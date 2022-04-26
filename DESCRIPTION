@@ -18,6 +18,7 @@ Imports:
     equatiomatic,
     feasts,
     fGarch,
+    fma,
     fpp3,
     GGally,
     ggplot2,
