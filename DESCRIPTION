@@ -21,6 +21,7 @@ Imports:
     fma,
     fpp3,
     GGally,
+    ggforce,
     ggplot2,
     glmnet,
     gridExtra,
