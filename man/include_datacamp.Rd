@@ -4,10 +4,12 @@
 \alias{include_datacamp}
 \title{Include PDFs in RMarkdown Document}
 \usage{
-include_datacamp(dir = "datacamp")
+include_datacamp(dir = "datacamp", verbose = TRUE)
 }
 \arguments{
 \item{dir}{name of the subdirectory in the rmarkdown document folder, the default folder is called "datacamp"}
+
+\item{verbose}{indicates if messages should be outputted on the command line. In the example chunk those information is also included in a pdf. Default is TRUE.}
 }
 \description{
 The intended use case for this function is to include pdf certificates of the
@@ -16,7 +18,7 @@ shows an rmarkdown chunk for importing a series of pdf certificates.
 }
 \examples{
 # Example rmarkdown code chunk
-```{r, echo=FALSE, out.width="24\%", fig.show='hold'}
+```{r, echo=FALSE, out.width="24\%", fig.show='hold', fig.align = 'left'}
 fhswf::include_datacamp()
 ```
 }
