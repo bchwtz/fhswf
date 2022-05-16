@@ -80,14 +80,14 @@ Look a wild formula for $s^2$ appeared.
 
 $$s^2 = \frac{1}{n-1}\sum_{i=1}^n (x_i-\bar{x})^2$$
 
-Longer Formulas can be split using the `align` environment.
+Longer Formulas can be spread across multiple lines manually using the `aligned` environment.
 
 $$
-\begin{align}
+\begin{aligned}
 \hat{y}_i = {} & \hat{\beta}_0 + \\
                & \hat{\beta}_1 \cdot x_1 +  \\
                & \hat{\beta}_2 \cdot x_2 + \hat{\beta}_3 \cdot x_3 + \hat{\epsilon}
-\end{align}
+\end{aligned}
 $$
 
 # Analysis
