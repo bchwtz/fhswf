@@ -45,6 +45,7 @@ include_datacamp <- function(dir = "datacamp", verbose = TRUE){
   path <- paste0("./",dir)
   if (!dir.exists(path)){
     if(verbose) message("fhswf::include_datacamp --> There is no folder named: ", dir)
+    if(verbose) message("Please create the folder:", file.path(getwd(),dir))
   } else {
     f <- list.files(path, full.names = T)
     f <- f[grepl("\\.pdf$", f)]
