@@ -466,7 +466,11 @@ $endif$
 
 %% SPACING
 \RequirePackage{setspace}
-\spacing{1.5}
+\newcommand{\codespacing}{\spacing{1}}
+\newcommand{\textspacing}{\spacing{1.25}}
+
+\textspacing
+%\spacing{1.5}
 
 %% LINE AND PAGE BREAKING
 \sloppy

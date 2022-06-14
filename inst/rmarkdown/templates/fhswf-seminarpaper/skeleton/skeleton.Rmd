@@ -150,9 +150,7 @@ german: true
 lang: de-de 
 ```
 
-
 \newpage
-\singlespacing
 
 # Technical Appendix {-}
 
