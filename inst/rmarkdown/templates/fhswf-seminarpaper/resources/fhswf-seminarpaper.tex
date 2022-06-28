@@ -468,6 +468,11 @@ $endif$
 \RequirePackage{setspace}
 \newcommand{\codespacing}{\spacing{1}}
 \newcommand{\textspacing}{\spacing{1.25}}
+\usepackage{etoolbox}
+\makeatletter
+\preto{\@verbatim}{\partopsep=-5pt}
+\makeatother
+\setlist[itemize]{topsep=0pt, parsep=5pt}
 
 \textspacing
 %\spacing{1.5}
