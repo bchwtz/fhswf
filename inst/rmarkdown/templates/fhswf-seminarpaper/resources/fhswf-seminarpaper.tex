@@ -13,6 +13,13 @@ $endif$
 \usepackage{tikz}
 \usepackage{float}
 
+\usepackage{xcolor}
+\usepackage{etoolbox}
+\makeatletter
+\preto{\@verbatim}{\partopsep=-5pt}
+\makeatother
+\setlist[itemize]{topsep=0pt, parsep=5pt}
+
 \usepackage{enumitem}
 \newlist{todolist}{itemize}{2}
 \setlist[todolist]{label=$$\square$$}
