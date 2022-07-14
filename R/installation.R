@@ -9,7 +9,8 @@ install_fhswf <- function(){
             "lineno","algorithm2e","ifoddpage","relsize","setspace",
             "ifdraft","microtype","fp","ms","pgf","babel-english","biblatex",
             "logreq","grffile","bera","fancyhdr","titlesec","palatino",
-            "mathtools","eukdate","textpos","grfext","fpl","mathpazo","biber")
+            "mathtools","eukdate","textpos","grfext","fpl","mathpazo","biber",
+            "colortbl", "wrapfig", "pdflscape", "xcolor")
 
   pkgs <- pkgs[!duplicated(pkgs)]
   pkgs <- sort(pkgs)
