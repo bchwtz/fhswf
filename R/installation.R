@@ -10,7 +10,7 @@ install_fhswf <- function(){
             "ifdraft","microtype","fp","ms","pgf","babel-english","biblatex",
             "logreq","grffile","bera","fancyhdr","titlesec","palatino",
             "mathtools","eukdate","textpos","grfext","fpl","mathpazo","biber",
-            "colortbl", "wrapfig", "pdflscape", "xcolor")
+            "colortbl", "wrapfig", "pdflscape", "xcolor", "multirow", "carlito")
 
   pkgs <- pkgs[!duplicated(pkgs)]
   pkgs <- sort(pkgs)
