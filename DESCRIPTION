@@ -31,6 +31,7 @@ Imports:
     markdown,
     olsrr,
     orcutt,
+    patchwork,
     reticulate,
     rmarkdown,
     stargazer,
