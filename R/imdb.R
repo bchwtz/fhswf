@@ -16,4 +16,4 @@
 #'  For example, the most frequent word is "the" which has 1 as index, the second most frequent word is "and" which has the index 2 and so on.
 #' }
 #' @source See `?dataset_imdb()` from R package keras.
-"imdbd"
+"imdb"
