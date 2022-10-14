@@ -7,10 +7,12 @@ install_fhswf <- function(){
   pkgs <- c("caption", "xpatch", "csquotes", "verbatimbox", "float","enumitem",
             "elsarticle","pdfcolmk","eurosym","paralist","sectsty","subfig",
             "lineno","algorithm2e","ifoddpage","relsize","setspace",
-            "ifdraft","microtype","fp","ms","pgf","babel-english","biblatex",
+            "microtype","fp","ms","pgf","babel-english","biblatex",
             "logreq","grffile","bera","fancyhdr","titlesec","palatino",
             "mathtools","eukdate","textpos","grfext","fpl","mathpazo","biber",
             "colortbl", "wrapfig", "pdflscape", "xcolor", "multirow", "carlito")
+
+  # pkgs <- c(pkgs, "ifdraft") # Package not present in any (?) TexLive Repo
 
   pkgs <- pkgs[!duplicated(pkgs)]
   pkgs <- sort(pkgs)
