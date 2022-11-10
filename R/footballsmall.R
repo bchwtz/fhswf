@@ -20,5 +20,6 @@
 #'   \item{viewers}{Average number of spectators at home matches in the season}
 #'   \item{season}{Football season of the observation}
 #' }
-#' @source \url{https://www.transfermarkt.de/TODO:WODENNGENAU}
+#' @source \url{https://www.transfermarkt.de/bundesliga/tabelle/wettbewerb/L1?saison_id=2018}
+#' @source \url{https://www.transfermarkt.de/bundesliga/transfers/wettbewerb/L1/plus/?saison_id=2018&s_w=&leihe=1&intern=0&intern=1}
 "footballsmall"
