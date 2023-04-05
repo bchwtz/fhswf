@@ -10,7 +10,7 @@
 #'   \item{charges}{Individual yearly medical costs billed by the health insurance. Unit in US dollars.}
 #'   \item{age}{Age in years of the primary beneficiary.}
 #'   \item{sex}{Insurance contractor gender, female, male}
-#'   \item{bmi}{Body Mass Index, providing an understanding of body, weights that are relatively high or low relative to height. Calculates as ratio of height to weight (kg/m^2). Normal Weight is considered to be in the range from 18.5 to 24.9.}
+#'   \item{bmi}{Body Mass Index, providing an understanding of body, weights that are relatively high or low relative to height. Calculated as ratio of height to weight (kg/m^2). Normal Weight is considered to be in the range from 18.5 to 24.9.}
 #'   \item{children}{Number of children/dependents covered by health insurance.}
 #'   \item{smoker}{Indicates if primary beneficirary is a smoker.}
 #'   \item{region}{The beneficiary's residential area in the US: northeast, southeast, southwest, northwest.}
