@@ -38,6 +38,7 @@ update_fhswf <- function(){
 #' shows an rmarkdown chunk for importing a series of pdf certificates.
 #'
 #' @param dir name of the subdirectory in the rmarkdown document folder, the default folder is called "datacamp"
+#' @param autorename character vector, that contains special characters that are automatically removed from the pdf filenames.
 #' @param verbose indicates if messages should be outputted on the command line. In the example chunk those information is also included in a pdf. Default is TRUE.
 #' @export
 #' @examples
@@ -45,18 +46,26 @@ update_fhswf <- function(){
 #' ```{r, echo=FALSE, out.width="24%", fig.show='hold', fig.align = 'left'}
 #' fhswf::include_datacamp()
 #' ```
-include_datacamp <- function(dir = "datacamp", verbose = TRUE){
+include_datacamp <- function(dir = "datacamp",
+                             autorename = c(" ","ä","ö","ü","Ä","Ö","Ü","ß"),
+                             verbose = TRUE){
   path <- paste0("./",dir)
   if (!dir.exists(path)){
     if(verbose) message("fhswf::include_datacamp --> There is no folder named: ", dir)
     if(verbose) message("Please create the folder:", file.path(getwd(),dir))
   } else {
-    f <- list.files(path, full.names = T)
-    f <- f[grepl("\\.pdf$", f)]
+    f <- list.files(path, full.names = F, pattern = "\\.pdf$")
     if(length(f) == 0){
       if(verbose) message("fhswf::include_datacamp --> There are no PDFs in the folder: ", dir)
     } else {
-      knitr::include_graphics(f)
+      # Autoremoving special characters
+      if(any(grepl(" ", f)) & !isFALSE(autorename)){
+        if(verbose) message("fhswf::include_datacamp --> Some files contain special characters; they are removed.")
+        for (char in autorename) f <- gsub(char, "", f)
+        file.rename(list.files(path, full.names = T, pattern = "\\.pdf$"),
+                    file.path(path,f))
+      }
+      knitr::include_graphics(list.files(path, full.names = T, pattern = "\\.pdf$"))
     }
   }
 }
