@@ -4,16 +4,12 @@
 \alias{include_datacamp}
 \title{Include PDFs in RMarkdown Document}
 \usage{
-include_datacamp(
-  dir = "datacamp",
-  autorename = c(" ", "ä", "ö", "ü", "Ä", "Ö", "Ü", "ß"),
-  verbose = TRUE
-)
+include_datacamp(dir = "datacamp", autorename = TRUE, verbose = TRUE)
 }
 \arguments{
-\item{dir}{name of the subdirectory in the rmarkdown document folder, the default folder is called "datacamp"}
+\item{dir}{name of the subdirectory in the rmarkdown document folder, the default folder is called "datacamp".}
 
-\item{autorename}{character vector, that contains special characters that are automatically removed from the pdf filenames.}
+\item{autorename}{logical, if TRUE (default) special characters, especially german Umlaute, in filenames are removed.}
 
 \item{verbose}{indicates if messages should be outputted on the command line. In the example chunk those information is also included in a pdf. Default is TRUE.}
 }

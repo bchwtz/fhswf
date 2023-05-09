@@ -37,8 +37,8 @@ update_fhswf <- function(){
 #' platform Datacamp within the fhswf::seminarpaper document. The example below
 #' shows an rmarkdown chunk for importing a series of pdf certificates.
 #'
-#' @param dir name of the subdirectory in the rmarkdown document folder, the default folder is called "datacamp"
-#' @param autorename character vector, that contains special characters that are automatically removed from the pdf filenames.
+#' @param dir name of the subdirectory in the rmarkdown document folder, the default folder is called "datacamp".
+#' @param autorename logical, if TRUE (default) special characters, especially german Umlaute, in filenames are removed.
 #' @param verbose indicates if messages should be outputted on the command line. In the example chunk those information is also included in a pdf. Default is TRUE.
 #' @export
 #' @examples
@@ -47,7 +47,7 @@ update_fhswf <- function(){
 #' fhswf::include_datacamp()
 #' ```
 include_datacamp <- function(dir = "datacamp",
-                             autorename = c(" ","ä","ö","ü","Ä","Ö","Ü","ß"),
+                             autorename = TRUE,
                              verbose = TRUE){
   path <- paste0("./",dir)
   if (!dir.exists(path)){
@@ -59,9 +59,10 @@ include_datacamp <- function(dir = "datacamp",
       if(verbose) message("fhswf::include_datacamp --> There are no PDFs in the folder: ", dir)
     } else {
       # Autoremoving special characters
-      if(any(grepl(" ", f)) & !isFALSE(autorename)){
-        if(verbose) message("fhswf::include_datacamp --> Some files contain special characters; they are removed.")
-        for (char in autorename) f <- gsub(char, "", f)
+      if(autorename){
+        if(verbose) message("fhswf::include_datacamp --> Checking and fixing special characters.")
+        f <- gsub(" ", "", f)
+        f <- stringi::stri_trans_general(f, "de-ASCII; Latin-ASCII")
         file.rename(list.files(path, full.names = T, pattern = "\\.pdf$"),
                     file.path(path,f))
       }
