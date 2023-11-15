@@ -9,7 +9,7 @@
 #'   \item{ temperature }{ Air Temperature in Tetouan city in °C. }
 #'   \item{ humidity }{ Air Humidity Level in Tetouan city in g/m^3. }
 #'   \item{ windspeed }{ Wind speed in Tetouan city in m/s. }
-#'   \item{ generaldiffuseflows }{ Probably: Solar irradiance in W/m2 }
+#'   \item{ generaldiffuseflows }{ Probably: Solar irradiance in W/m^2. }
 #'   \item{ diffuseflows }{}
 #'   \item{ consumption }{ Zone 1 Power consumption in UNIT }
 #' }
