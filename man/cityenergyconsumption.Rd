@@ -5,15 +5,14 @@
 \alias{cityenergyconsumption}
 \title{City Energy Consumption Data}
 \format{
-A data frame with 52416 rows and 7 variables:
+A data frame with 52416 rows and 6 variables:
 \describe{
-  \item{ date }{ }
-  \item{ temperature }{ }
-  \item{ humidity }{ }
-  \item{ windspeed }{ }
-  \item{ generaldiffuseflows }{ }
-  \item{ diffuseflows }{}
-  \item{ consumption }{Zone 1 Power consumption in UNIT }
+  \item{ date }{ Timestamp for historical data which was collected every 10 minutes for the period between 2017-01-01:00:00:00 and 2017-12-31:23:50:00. }
+  \item{ temperature }{ Air Temperature in Tetouan city in °C. }
+  \item{ humidity }{ Air Humidity Level in Tetouan city in g/m^3. }
+  \item{ windspeed }{ Wind speed in Tetouan city in m/s. }
+  \item{ generalflux }{Solar irradiance in W/m^2.}
+  \item{ consumption }{ Zone 1 Power consumption in UNIT }
 }
 }
 \source{
@@ -23,9 +22,9 @@ A data frame with 52416 rows and 7 variables:
 cityenergyconsumption
 }
 \description{
-Description TODIO
+This dataset is related to power consumption of the distribution network Quads of Tetouan city which is located in north Morocco.
 }
 \references{
-Salam, A., & El Hibaoui, A. (2018, December). Comparison of Machine Learning Algorithms for the Power Consumption Prediction:-Case Study of Tetouan city“. In 2018 6th International Renewable and Sustainable Energy Conference (IRSEC) (pp. 1-5). IEEE.
+Salam, A., & El Hibaoui, A. (2018). Comparison of Machine Learning Algorithms for the Power Consumption Prediction:-Case Study of Tetouan city“. In 2018 6th International Renewable and Sustainable Energy Conference (IRSEC) (pp. 1-5). IEEE.
 }
 \keyword{datasets}
