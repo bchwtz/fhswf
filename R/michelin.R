@@ -1,0 +1,44 @@
+#' Michelin Restaurant Dataset
+#'
+#' @description
+#' This data set consists of information about 210 Michelin-star-awarded
+#' restaurants across six European countries. Data was scraped from the
+#' official website of the Guide Michelin as of September 2023.
+#'
+#' @format A data frame with 210 rows and 31 variables:
+#' \describe{
+#'   \item{lower_price}{ Price in Euro of the smallest main regular tasting menu of the restaurant. }
+#'   \item{upper_price}{ Price in Euro of the most expensive main regular tasting menu of the restaurant. Identical to \textbf{lower_price} if ther restaurant offers only a single main tasting menu.}
+#'   \item{michelin_stars}{ }
+#'   \item{country}{ Two digit country code indicating the residence country of the restuaurant.}
+#'   \item{city}{ }
+#'   \item{postcode}{ }
+#'   \item{location_latitude}{ }
+#'   \item{location_longitude}{ }
+#'   \item{cooking_style}{ }
+#'   \item{cooking_style_classic}{ }
+#'   \item{cooking_style_modern}{ }
+#'   \item{cooking_style_creative}{ }
+#'   \item{cooking_style_french}{ }
+#'   \item{vegetarian}{ }
+#'   \item{sustainable}{ }
+#'   \item{wine_card}{ }
+#'   \item{nice_view}{ }
+#'   \item{accessible}{ }
+#'   \item{online_booking}{ }
+#'   \item{chef}{ Name of the head chef of the restuarant. }
+#'   \item{restaurant_name}{ Given name of the restaurant. }
+#'   \item{opening_hours_monday}{ }
+#'   \item{opening_hours_tuesday}{ }
+#'   \item{opening_hours_wednesday}{ }
+#'   \item{opening_hours_thursday}{ }
+#'   \item{opening_hours_friday}{ }
+#'   \item{opening_hours_saturday}{ }
+#'   \item{opening_hours_sunday}{ }
+#'   \item{days_open}{ Number of days per week that the restaurant is usually open for business.}
+#'   \item{restaurant_link}{ URL to the website of the restaurant.}
+#'   \item{michelin_link}{ URL to the entry in the digital Guide Michelin.}
+#' }
+#'
+#' @source \url{https://guide.michelin.com/de/de/restaurants}
+"michelin"
