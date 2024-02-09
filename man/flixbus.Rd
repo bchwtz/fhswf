@@ -31,7 +31,7 @@ A data frame with 7862 rows and 25 variables:
   \item{dist}{ Distance travelled of the conenction, in km.}
   \item{pop}{ Geometric mean of the pupulation of the origin and destination cities.}
   \item{gdp}{ Geometric mean of the GDP of the origina and destination cities}
-  \item{flixbus_only}{ Is flixbus the only transport provider for a direct connection between origin and destiantion. }
+  \item{flixbus_only}{ Is Flixbus the only transport provider for a direct connection between origin and destiantion. }
 }
 }
 \source{
