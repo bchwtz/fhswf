@@ -17,7 +17,7 @@ A data frame with 2322 rows and 11 variables:
   \item{price_secondary_used}{ Average price in US dollars of a used set in online markets. }
   \item{price_release}{ Price in US dollars of the set at release, als suggested by the manufacturer (MSRP). }
   \item{age_recommendation}{ Recommended minimum age of the set. }
-  \item{size_group}{ Indicator showing the size group of the set, where 1 is smallest and 4 is largest set size category. }
+  \item{size_group}{ Indicator showing the size group of the set, where 1 is the biggest and 4 is smallest set size category. }
 }
 }
 \source{
@@ -27,6 +27,8 @@ A data frame with 2322 rows and 11 variables:
 lego
 }
 \description{
-This data set
+This data set contains descriptive information as well as primary and
+secondary market prices for sets containing terminal blocks from
+the danish company LEGO.
 }
 \keyword{datasets}

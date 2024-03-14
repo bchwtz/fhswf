@@ -14,9 +14,12 @@ lego <- lego %>%
   rename(price_secondary_used = `Secondary market prices of used sets in 2015`) %>%
   rename(price_release = `Primary market price at release`) %>%
   rename(age_recommendation = age) %>%
-  rename(size_group = `Size group (1 - Biggest; 4 - Smallest)`)
+  rename(size_group = `Size group (1 - Biggest; 4 - Smallest)`) %>%
+  mutate(minifigure_count = as.numeric(minifigure_count)) %>%
+  mutate(price_secondary_new = as.numeric(price_secondary_new)) %>%
+  mutate(price_secondary_used = as.numeric(price_secondary_used))
 
-
+lego
 names(lego)
 
 # Saving
