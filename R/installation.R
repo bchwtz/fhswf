@@ -7,7 +7,7 @@ install_fhswf <- function(){
   pkgs <- c("caption", "xpatch", "csquotes", "verbatimbox", "float","enumitem",
             "elsarticle","pdfcolmk","eurosym","paralist","sectsty","subfig",
             "lineno","algorithm2e","ifoddpage","relsize","setspace",
-            "microtype","fp","ms","pgf","babel-english","biblatex",
+            "microtype","fp","ms","pgf","babel-english","ngerman","biblatex",
             "logreq","grffile","bera","fancyhdr","titlesec","palatino",
             "mathtools","eukdate","textpos","grfext","fpl","mathpazo","biber",
             "colortbl", "wrapfig", "pdflscape", "xcolor", "multirow", "carlito",
