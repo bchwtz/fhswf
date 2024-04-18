@@ -13,9 +13,8 @@ A data frame with 7862 rows and 25 variables:
   \item{dep}{ Time of departure, date part of the data can be ignored.}
   \item{arr}{ Time of arrival, date part can be ignored.}
   \item{fare}{ One-way price in Euro for a single seat on the given route. }
-  \item{dur}{ Travel duration, date part can be ignored. }
   \item{bookingday}{ Number of days prior to departue. }
-  \item{seats_remaining}{ Remaining seats of teh connection. }
+  \item{seats_remaining}{ Remaining seats of the connection. }
   \item{fare1}{ Fare in Euro of the first seat on sale for the given connection. }
   \item{dow_departure}{ Day of the week of departure, where 0=Sunday, 1=Monday, ... }
   \item{weekend_departure}{ Indicator singaling wheter the departure is on the weekend. }
@@ -30,8 +29,9 @@ A data frame with 7862 rows and 25 variables:
   \item{travel_sub}{ Means of transport for a substitution for this connection. }
   \item{dist}{ Distance travelled of the conenction, in km.}
   \item{pop}{ Geometric mean of the pupulation of the origin and destination cities.}
-  \item{gdp}{ Geometric mean of the GDP of the origina and destination cities}
+  \item{gdp}{ Geometric mean of the GDP of the origina and destination cities.}
   \item{flixbus_only}{ Is Flixbus the only transport provider for a direct connection between origin and destiantion? }
+  \item{dur_min}{ Travel duration in minutes. }
 }
 }
 \source{
@@ -43,5 +43,13 @@ flixbus
 \description{
 This data set contains pricing information of the long-distance bus
 service Flixbus in Europe.
+}
+\details{
+The variables [pop] and [gdp] are geometric means, which is a rather interesting choice.
+Both indicators aim at measuring the size of the connection between the two cities, either
+in population or monetary means. As the arithmetic mean is heavily influenced by outliers
+a connection travelling from a rather small to a large city may not be described accurately
+by e.g. the arithmetic mean of the populations. The same may be true for the difference between
+both populations. Therefore the geometric mean is chosen by the authors of the data set.
 }
 \keyword{datasets}
