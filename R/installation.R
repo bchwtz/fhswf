@@ -12,7 +12,7 @@ install_fhswf <- function(){
             "logreq","grffile","bera","fancyhdr","titlesec","palatino",
             "mathtools","eukdate","textpos","grfext","fpl","mathpazo","biber",
             "colortbl", "wrapfig", "pdflscape", "xcolor", "multirow", "carlito",
-            "hyphen-german")
+            "hyphen-german", "ulem", "colortbl", "tabu","environ")
 
   # pkgs <- c(pkgs, "ifdraft") # Package not present in any (?) TexLive Repo
 
