@@ -1,7 +1,7 @@
 Package: fhswf
 Type: Package
 Title: fhswf
-Version: 0.0.7
+Version: 0.0.8
 Author: Benjamin Buchwitz
 Maintainer: Benjamin Buchwitz <buchwitz.benjamin@fh-swf.de>
 Description: More about what it does (maybe more than one line)
@@ -15,6 +15,7 @@ Imports:
     broom,
     car,
     dplyr,
+    equatiomatic,
     feasts,
     fGarch,
     fma,
