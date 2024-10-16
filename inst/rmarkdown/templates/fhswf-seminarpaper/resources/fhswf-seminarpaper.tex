@@ -509,8 +509,8 @@ $endif$
 
 %% SPACING
 \RequirePackage{setspace}
-\newcommand{\codespacing}{\spacing{1}}
-\newcommand{\textspacing}{\spacing{1.25}}
+\newcommand{\codespacing}{\singlespacing}
+\newcommand{\textspacing}{\onehalfspacing}
 \usepackage{etoolbox}
 \makeatletter
 \preto{\@verbatim}{\partopsep=-5pt}
@@ -549,6 +549,25 @@ $endif$
      citecolor=darkblue,
      colorlinks=true}
 
+%% PANDOC
+$if(graphics)$
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+$endif$
+
 %% KEYWORDS
 \newenvironment{keywords}{\par\vspace{0.5cm}\noindent{\sffamily\textbf{Keywords:}}}{\vspace{0.25cm}\par\hrule\vspace{0.5cm}\par}
 
@@ -556,7 +575,6 @@ $endif$
 \renewenvironment{abstract}{\begin{minipage}{\textwidth}\parskip=1.4ex\noindent
 \hrule\vspace{0.1cm}\par{\sffamily\textbf{\abstractname}}\newline}
   {\end{minipage}}
-
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
