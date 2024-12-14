@@ -33,7 +33,6 @@ Imports:
     magick,
     markdown,
     olsrr,
-    orcutt,
     patchwork,
     purrr,
     reticulate,
@@ -46,3 +45,5 @@ Imports:
     tinytex,
     usethis,
     USgas
+Suggests: 
+    orcutt
