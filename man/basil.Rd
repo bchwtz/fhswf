@@ -19,6 +19,7 @@ A data frame with n rows and m variables:
   \item{potspacing}{ in mm}
   \item{row}{ }
   \item{column}{ }
+  \item{plantid}{ }
   \item{weight_total}{ in g}
   \item{weight_plant1}{ in g}
   \item{weight_plant2}{ in g}
