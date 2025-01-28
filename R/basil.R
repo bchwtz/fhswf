@@ -49,12 +49,7 @@
 #' }
 #'
 #' @details
-#' The variables [pop] and [gdp] are geometric means, which is a rather interesting choice.
-#' Both indicators aim at measuring the size of the connection between the two cities, either
-#' in population or monetary means. As the arithmetic mean is heavily influenced by outliers
-#' a connection travelling from a rather small to a large city may not be described accurately
-#' by e.g. the arithmetic mean of the populations. The same may be true for the difference between
-#' both populations. Therefore the geometric mean is chosen by the authors of the data set.
+#' vertical farm
 #'
 #' @source \url{https://www.bchwtz.de}
 #' @source \url{https://github.com/bchwtz/bchwtz-farm}
