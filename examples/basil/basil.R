@@ -108,7 +108,7 @@ basil %<>% group_by(potspacing) %>%
   # spaceplate + plantplate1 + spaceplate + plantplate2 + spaceplate
   mutate(border_spaceplate = ifelse(ID == 1 & border_row, T, border_spaceplate),
          border_water = ifelse(ID == 1, FALSE, border_water),
-         border_elec  = ifelse(ID == 1, FALSE, border_water)) %>%
+         border_elec  = ifelse(ID == 1, FALSE, border_elec)) %>%
   #=== FINALLY =================================================================
   # Given a pot is located at any border it has approximately the same amount
   # of extra space. Therefore we combine all bordering variables into one new
