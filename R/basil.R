@@ -12,26 +12,40 @@
 #'   \item{repot_date}{ }
 #'   \item{harvest_date}{ }
 #'   \item{level}{ }
-#'   \item{lightcolour}{ in Kelvin}
-#'   \item{lightduration}{ in hours}
-#'   \item{darknessduration}{ in hours}
-#'   \item{potspacing}{ in mm}
+#'   \item{plantplatepos}{ }
+#'   \item{lightcolour}{ }
+#'   \item{lightduration}{ }
+#'   \item{darknessduration}{ }
+#'   \item{potspacing}{ }
 #'   \item{row}{ }
 #'   \item{column}{ }
 #'   \item{plantid}{ }
-#'   \item{weight_total}{ in g}
-#'   \item{weight_plant1}{ in g}
-#'   \item{weight_plant2}{ in g}
-#'   \item{weight_plant3}{ in g}
-#'   \item{weight_plant4}{ in g}
-#'   \item{weight_plant5}{ in g}
-#'   \item{weight_plant6}{ in g}
-#'   \item{weight_plant7}{ in g}
-#'   \item{weight_plant8}{ in g}
-#'   \item{weight_plant9}{ in g}
-#'   \item{weight_plant10}{ in g}
-#'   \item{weight_plant11}{ in g}
-#'   \item{weight_plant12}{ in g}
+#'   \item{weight_total}{ }
+#'   \item{weight_plant1}{ }
+#'   \item{weight_plant2}{ }
+#'   \item{weight_plant3}{ }
+#'   \item{weight_plant4}{ }
+#'   \item{weight_plant5}{ }
+#'   \item{weight_plant6}{ }
+#'   \item{weight_plant7}{ }
+#'   \item{weight_plant8}{ }
+#'   \item{weight_plant9}{ }
+#'   \item{weight_plant10}{ }
+#'   \item{weight_plant11}{ }
+#'   \item{weight_plant12}{ }
+#'   \item{plantcount}{ }
+#'   \item{weight_plantsum}{ }
+#'   \item{plantdensity}{ }
+#'   \item{weight_lostyield}{ }
+#'   \item{mingroovedist}{ }
+#'   \item{border_window}{ }
+#'   \item{border_door}{ }
+#'   \item{border_water}{ }
+#'   \item{border_elec}{ }
+#'   \item{border_row}{ }
+#'   \item{border_plantplate}{ }
+#'   \item{border_spaceplate}{ }
+#'   \item{border}{ }
 #' }
 #'
 #' @details
