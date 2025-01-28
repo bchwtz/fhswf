@@ -115,7 +115,8 @@ basil %<>% group_by(potspacing) %>%
   # variable. We do not consider the cases of two bordering plantplates here,
   # as the amount of extra space seems negligible.
   mutate(border = border_window | border_door | border_water |
-           border_elec | border_spaceplate)
+           border_elec | border_spaceplate) %>%
+  ungroup()
   # === END ====================================================================
 
 
