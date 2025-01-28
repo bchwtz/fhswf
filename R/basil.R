@@ -45,7 +45,7 @@
 #'   \item{border_row}{ }
 #'   \item{border_plantplate}{ }
 #'   \item{border_spaceplate}{ }
-#'   \item{border}{ }
+#'   \item{border}{Dummy indicating wether a position on the plant plate is located at a border.}
 #' }
 #'
 #' @details
