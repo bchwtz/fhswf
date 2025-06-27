@@ -20,7 +20,8 @@
 #'   \item{row}{ }
 #'   \item{column}{ }
 #'   \item{plantid}{ }
-#'   \item{weight_total}{ }
+#'   \item{comment}{ }
+#'   \item{weight_total}{ Total weight of all plants in a pot in grams. Result stems from a single measurement, directly after harvesting the plants. }
 #'   \item{weight_plant1}{ }
 #'   \item{weight_plant2}{ }
 #'   \item{weight_plant3}{ }
